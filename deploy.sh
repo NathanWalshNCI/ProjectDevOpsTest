@@ -4,6 +4,10 @@ sudo apt update && sudo apt install nodejs npm
 sudo npm install -g pm2
 #Stop any instance of our application running currently
 pm2 stop example_app
+#
+pm2 delete example_app
+#
+pm2 cleardump
 #CD into folder where application is downloaded
 cd ProjectDevOpsTest/
 #Install application dependencies
